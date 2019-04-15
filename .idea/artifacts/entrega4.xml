@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="entrega4">
+    <output-path>$PROJECT_DIR$/out/artifacts/entrega4</output-path>
+    <root id="archive" name="entrega4.jar">
+      <element id="module-output" name="Biblioteca" />
+      <element id="file-copy" path="$PROJECT_DIR$/resources/ES_Diagram.drawio.pdf" />
+    </root>
+  </artifact>
+</component>
