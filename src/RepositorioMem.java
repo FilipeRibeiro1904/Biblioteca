@@ -16,6 +16,7 @@ public class RepositorioMem implements Repositorio {
     private static ArrayList<PropostaAquisicao> list_PropostaAquisicao;
     private static ArrayList<RequisicaoCompra> list_RequisicaoCompra;
     private static ArrayList<RequisicaoCompraCopia> list_RequisicaoCompraCopia;
+
     private static ArrayList<RequisicaoCompraLivro> list_RequisicaoCompraLivro;
 
     public RepositorioMem() {
