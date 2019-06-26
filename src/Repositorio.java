@@ -15,6 +15,9 @@ public interface Repositorio {
     void adicionaTipoUtilizador(TipoUtilizador tipo);
     void adicionaUtilizador(Utilizador utilizador);
     Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
-
+    void adicionaEspaco(Espaco espaco);
+    void adiconaRequisicaoEspaco(RequisicaoEspaco requisicaoEspaco);
+    void adicionaReservaLivro(ReservaLivro reservaLivro);
+    void adicionaNotificacaoReserva(NotificacaoReserva notificacaoReserva);
 
 }

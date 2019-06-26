@@ -16,8 +16,12 @@ public class RepositorioMem implements Repositorio {
     private static ArrayList<PropostaAquisicao> list_PropostaAquisicao;
     private static ArrayList<RequisicaoCompra> list_RequisicaoCompra;
     private static ArrayList<RequisicaoCompraCopia> list_RequisicaoCompraCopia;
-
     private static ArrayList<RequisicaoCompraLivro> list_RequisicaoCompraLivro;
+    private static ArrayList<Espaco> list_Espaco;
+    private static ArrayList<RequisicaoEspaco> list_RequisicaoEspaco;
+    private static ArrayList<ReservaLivro> list_ReservaLivro;
+    private static ArrayList<NotificacaoReserva> list_NotificacaoReserva;
+
 
     public RepositorioMem() {
         list_Emprestimo = new ArrayList<Emprestimo>();
@@ -35,6 +39,9 @@ public class RepositorioMem implements Repositorio {
         list_RequisicaoCompra = new ArrayList<RequisicaoCompra>();
         list_RequisicaoCompraCopia = new ArrayList<RequisicaoCompraCopia>();
         list_RequisicaoCompraLivro = new ArrayList<RequisicaoCompraLivro>();
+        list_Espaco = new ArrayList<Espaco>();
+        list_RequisicaoEspaco = new ArrayList<RequisicaoEspaco>();
+        list_ReservaLivro = new ArrayList<ReservaLivro>();
     }
 
     @Override
@@ -112,6 +119,7 @@ public class RepositorioMem implements Repositorio {
         list_Utilizador.add(utilizador);
     }
 
+
     @Override
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r){
         for (Emprestimo emprestimo: list_Emprestimo){
@@ -121,4 +129,28 @@ public class RepositorioMem implements Repositorio {
         }
         return null;
     }
+
+    @Override
+    public void adicionaEspaco(Espaco espaco) {
+        list_Espaco.add(espaco);
+    }
+
+    @Override
+    public void adiconaRequisicaoEspaco(RequisicaoEspaco requisicaoEspaco) {
+        list_RequisicaoEspaco.add(requisicaoEspaco);
+    }
+
+    @Override
+    public void adicionaReservaLivro(ReservaLivro reservaLivro) {
+        list_ReservaLivro.add(reservaLivro);
+
+    }
+
+    @Override
+    public void adicionaNotificacaoReserva(NotificacaoReserva notificacaoReserva) {
+        list_NotificacaoReserva.add(notificacaoReserva);
+
+    }
+
+
 }
